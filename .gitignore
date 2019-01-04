@@ -1,0 +1,8 @@
+# LaTeX Generated Files #
+#########################
+*.log
+*.synctex.gz
+*.aux
+*.bbl
+*.blg
+*.pdf
