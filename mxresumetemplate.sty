@@ -1,0 +1,36 @@
+\ProvidesPackage{mxresumetemplate}
+\usepackage{lipsum}
+
+\usepackage{xcolor}
+
+\usepackage{mdframed}
+\newenvironment{resumeheading}[1][]
+{
+	\begin{mdframed}
+	[
+		nobreak=true,
+		linewidth=0pt,
+		frametitle={#1},
+		frametitlerule=true,
+		backgroundcolor=headingFill,
+		fontcolor=headingColour,
+		innertopmargin=\topskip,
+	]
+}{
+	\end{mdframed}
+}
+
+\newenvironment{resumebody}[1][]
+{
+	\begin{mdframed}
+	[
+		nobreak=true,
+		linewidth=0pt,
+		frametitle={#1},
+		frametitlerule=true,
+		backgroundcolor=bodyFill,
+		fontcolor=bodyColour,
+	]
+}{
+	\end{mdframed}
+}
