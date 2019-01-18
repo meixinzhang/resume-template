@@ -1,23 +1,24 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mxresume}[2018/12/16 MX Resume Template]
 
+
 %%%%%%%%%%
 % COLOUR %
 %%%%%%%%%%
 
 \RequirePackage{xcolor}
 
-% Default colour scheme
-\definecolor{fill1}{RGB}{0,0,120}
+% Define colour scheme
+\definecolor{fill1}{RGB}{0,68,138}
 \definecolor{fill2}{RGB}{240,240,240}
 
 \colorlet{headingFill}{fill1}
 \colorlet{headingColour}{white}
+\colorlet{sidebarFill}{white}
+\colorlet{sidebarColour}{black}
 \colorlet{bodyFill}{fill2}
 \colorlet{bodyColour}{black}
 
-%\DeclareOption{mono}{\colorlet{headingFill}{\color{black}}}
-%\DeclareOption{red}{\renewcommand{\headlinecolor}{\color{slcolor}}} 
 
 %%%%%%%%%%
 % HEADER %
@@ -25,12 +26,6 @@
 
 \LoadClass{article}
 \RequirePackage{titlesec}
-
-\titleformat{\subsubsection}
-  {\large\bfseries\scshape\raggedright}
-  {}{0em}
-  {}
-  [\titlerule] % Inserts a horizontal line after the heading
 
 \newcommand{\name}[2]{
   \vspace{5mm}
@@ -53,9 +48,15 @@
 }
 
 
-%%%%%%%%%%%%
-% SECTIONS %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% SECTIONS WITH DATES %
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\titleformat{\subsubsection}
+  {\large\bfseries\scshape\raggedright} % Can change colour of underlined heading here
+  {}{0em}
+  {}
+  [{\titlerule[1pt]}] % Inserts a horizontal line after the heading
 
 \newcommand{\datedsection}[2]{
   \large{\textit{#1 \hfill #2}}
@@ -66,15 +67,3 @@
   \subsection*{#1 \hfill \normalfont\textit{#2}}
 }
 
-%%%%%%%%%%%
-% SPACING %
-%%%%%%%%%%%
-
-\newcommand{\sideseparator}{
-  
-}
-
-\newcommand{\middleseparator}{
-  
-}
- 

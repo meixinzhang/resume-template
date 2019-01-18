@@ -20,6 +20,23 @@
 	\end{mdframed}
 }
 
+\newenvironment{sidebar}[1][]
+{
+	\begin{mdframed}
+	[
+		nobreak=true,
+		linewidth=0pt,
+		frametitle={#1},
+		frametitlerule=true,
+		backgroundcolor=sidebarFill,
+		fontcolor=sidebarColour,
+		innerleftmargin=3mm,
+        innerrightmargin=0mm,
+	]
+}{
+	\end{mdframed}
+}
+
 \newenvironment{resumebody}[1][]
 {
 	\begin{mdframed}
@@ -30,6 +47,8 @@
 		frametitlerule=true,
 		backgroundcolor=bodyFill,
 		fontcolor=bodyColour,
+		innerleftmargin=2mm,
+        innerrightmargin=2mm,
 	]
 }{
 	\end{mdframed}

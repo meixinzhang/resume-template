@@ -10,6 +10,9 @@
 \titlespacing{\section}{0pt}{3pt}{3pt}
 \titlespacing{\subsection}{0pt}{2pt}{2pt}
 
+% Changes the font of the document from default to sans-serif (Times New Roman)
+\renewcommand{\familydefault}{\sfdefault}
+
 % Changes the size of the bullet 
 \usepackage{enumitem}
 \renewcommand\labelitemi{\small\textbullet}
@@ -19,42 +22,41 @@
 \graphicspath{ {./icons/} }
 
 \definecolor{gray}{RGB}{124,124,124}
-\newcommand{\Bullet}{\tiny\textbf{ }\Large\textperiodcentered\tiny\textbf{ }\textbf{ }\normalsize}
+\newcommand{\Bullet}{\tiny\textbf{ }\raisebox{0.5mm}\textbullet\tiny\textbf{ }\textbf{ }\normalsize}
 \newcommand{\Bar}{\textbf{ }\textbar\textbf{ }}
+\newcommand{\Cpp}{C\texttt{++}\textbf{}}
+\newcommand{\Csharp}{C\texttt{\#}\textbf{}}
  
 \begin{document}
 \begin{resumeheading} %%%%%%%%%%% Heading %%%%%%%%%%
 \name{Jane}{Doe}
 \expertise{Software Engineer}
-\vspace{2mm}
+\vspace{5mm}
 \end{resumeheading}
 \vspace{-3mm}
-\begin{minipage}[t]{0.1\textwidth}
-\end{minipage}
-\hfill
 \begin{minipage}[t]{0.25\textwidth} %%%%%%%%%% Side Bar for Highlighted Information %%%%%%%%%%
-\ \\[2mm]
-\includegraphics[scale=0.15]{phone-icon.png}
-(123) 456-7890 \\
-\includegraphics[scale=0.15]{email-icon.png}
-\textcolor{blue}{janedoe@random.com}
-\\
-\includegraphics[scale=0.15]{linkedin-icon.png}
-\href{www.linkedin.com/in/meixin-zhang/}
-{\textcolor{blue}{https://www.linkedin.com/in/ \\
-\hspace*{4mm} meixin-zhang/}}
-\\
-\includegraphics[scale=0.15]{github-icon.png}
-\href{https://github.com/meixinzhang}
-{\textcolor{blue}{github.com/meixinzhang}}
+\begin{sidebar}
+\includegraphics[scale=0.2]{phone-icon.png}
+\raisebox{1.5mm}{(289) 828-4916} 
+\\[1mm]
+\includegraphics[scale=0.2]{email-icon.png}
+\raisebox{1.5mm}{\href{mailto:meixinzhang@outlook.com}{\textcolor{fill1}{meixinzhang\textsc{@}outlook.com}}}
+\\[1mm]
+\includegraphics[scale=0.2]{linkedin-icon.png}
+\raisebox{1.5mm}{\href{https://www.linkedin.com/in/meixin-zhang/}
+{\textcolor{fill1}{linkedin.com/in/meixin-zhang}}}
+\\[1mm]
+\includegraphics[scale=0.2]{github-icon.png}
+\raisebox{1.5mm}{\href{https://github.com/meixinzhang}
+{\textcolor{fill1}{github.com/meixinzhang}}}
 \subsubsection*{Skills}
 Some skills \\
 Some more skills
 \subsubsection*{Programming Languages}
-C / C++ \Bullet C\# \Bullet Java \\
+C / \Cpp\ \Bullet \Csharp\ \Bullet Java \\
 Angular \Bullet Scheme \Bullet SQL
 \subsubsection*{Technical Skills}
-Git \Bullet \LaTeX \Bullet Vim \Bullet Bash \\
+Git \Bullet \textsc{\LaTeX} \Bullet Vim \Bullet Bash \\
 Some more skills
 \subsubsection{Relevant Courses}
 Object-Oriented Programming \\
@@ -63,55 +65,60 @@ Combinatorics and Optimization
 \textbf{University of Waterloo} \\
 Bachelor of Computing and \\
 Financial Management \\
-Class of 2022 \textcolor{gray}{\Bar} Waterloo, ON \\
-\end{minipage}
-\begin{minipage}[t]{0.002\textwidth}
+Class of 2022 \textcolor{gray}{\Bar} Waterloo, ON
+\end{sidebar}
 \end{minipage}
 \hfill\textcolor{gray}{\vline width 1pt}\hfill
-\begin{minipage}[t]{0.7\textwidth} %%%%%%%%%% Resume Body %%%%%%%%%%
+\begin{minipage}[t]{0.73\textwidth} %%%%%%%%%% Resume Body %%%%%%%%%%
 \begin{resumebody}
-\section*{Summary of Qualifications}
-\begin{itemize}[leftmargin=5mm]
-\setlength{\itemsep}{0mm}
-\item Here are some \textbf{highlights} from your past experiences
-\item Here are some more \textbf{highlights} from your past experiences
-\item Here are some more \textbf{highlights} from your past experiences
-\end{itemize}
 \section*{Relevant Experiences} 
 \subsection*{Software Engineer Intern}
 \datedsection{Company1 -- Location}{January 2018 -- Present}
-\begin{itemize}[leftmargin=5mm]
+\begin{itemize}[leftmargin=4.5mm] % Where the text starts
+\setlength{\itemsep}{0mm}
+\item Here are some details about this work experience
+\item Here are some more details about this work experience
+\end{itemize}
+\subsection*{Machine Learning Intern}
+\datedsection{Company2 -- Location}{September 2018 -- December 2018}
+\begin{itemize}[leftmargin=4.5mm] % Where the text starts
 \setlength{\itemsep}{0mm}
 \item Here are some details about this work experience
 \item Here are some more details about this work experience
 \end{itemize}
 \subsection*{Software Developer}
-\datedsection{Company2 -- Location}{April - August 2017}
-\begin{itemize}[leftmargin=5mm]
+\datedsection{Company3 -- Location}{April - August 2017}
+\begin{itemize}[leftmargin=4.5mm]
 \setlength{\itemsep}{0mm}
 \item Here are some details about this work experience
 \item Here are some more details about this work experience
 \end{itemize}
 \section*{Projects}
 \datedsubsection{Project 1}{January 2019 -- Present}
-\begin{itemize}[leftmargin=5mm]
+\begin{itemize}[leftmargin=4.5mm]
 \setlength{\itemsep}{0mm}
 \item Here are some details about this project
 \item Here are some more details about this project
 \end{itemize}
 \datedsubsection{Project 2}{June 2018}
-\begin{itemize}[leftmargin=5mm]
+\begin{itemize}[leftmargin=4.5mm]
 \setlength{\itemsep}{0mm}
 \item Here are some details about this project
 \item Here are some more details about this project
 \end{itemize}
 \datedsubsection{Project 2}{January 2018}
-\begin{itemize}[leftmargin=5mm]
+\begin{itemize}[leftmargin=4.5mm] 
 \setlength{\itemsep}{0mm}
 \item Here are some details about this project
 \item Here are some more details about this project
 \end{itemize}
-\textit{} \\[8cm] % This fills the rest of the page 
+\section*{Awards and Accomplishments}
+\begin{itemize}[leftmargin=4.5mm] 
+\setlength{\itemsep}{0mm}
+\item Award 1
+\item Award 2
+\end{itemize}
+\textit{} \\[6cm] % This fills the rest of the page 
 \end{resumebody}
 \end{minipage}
 \hfill
