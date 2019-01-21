@@ -59,11 +59,9 @@
   [{\titlerule[1pt]}] % Inserts a horizontal line after the heading
 
 \newcommand{\datedsection}[2]{
-  \large{\textit{#1 \hfill #2}}
-  \vspace{-2mm} % Undo the margin that comes after
+  \subsection*{\normalfont\textit{#1 \hfill #2}} % uses subsection to ensure that all dates are aligned
 }
 
 \newcommand{\datedsubsection}[2]{
   \subsection*{#1 \hfill \normalfont\textit{#2}}
 }
-
