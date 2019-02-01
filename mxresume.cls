@@ -1,7 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mxresume}[2018/12/16 MX Resume Template]
 
-
 %%%%%%%%%%
 % COLOUR %
 %%%%%%%%%%
