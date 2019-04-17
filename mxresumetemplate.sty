@@ -4,6 +4,8 @@
 \usepackage{xcolor}
 
 \usepackage{mdframed}
+\mdfsetup{skipabove=0pt,skipbelow=-2pt} % removes above and below skips
+
 \newenvironment{resumeheading}[1][]
 {
 	\begin{mdframed}
@@ -30,6 +32,8 @@
 		frametitlerule=true,
 		backgroundcolor=sidebarFill,
 		fontcolor=sidebarColour,
+		% edit for margin
+		innertopmargin=3mm,
 		innerleftmargin=3mm,
         innerrightmargin=0mm,
 	]
@@ -47,8 +51,11 @@
 		frametitlerule=true,
 		backgroundcolor=bodyFill,
 		fontcolor=bodyColour,
+		% edit for margin
+		innertopmargin=2mm,
+		innerbottommargin=2.5mm,
 		innerleftmargin=2mm,
-        innerrightmargin=2mm,
+        innerrightmargin=3mm,
 	]
 }{
 	\end{mdframed}
