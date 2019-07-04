@@ -1,16 +1,16 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mxresume}[2018/12/16 MX Resume Template]
 
-%%%%%%%%%%
-% COLOUR %
-%%%%%%%%%%
+%%%%%%%%%
+%   COLOUR   %
+%%%%%%%%%
 
 \RequirePackage{xcolor}
 
 % Define colour scheme
 \definecolor{fill1}{RGB}{20,56,108}
 % \definecolor{fill1}{RGB}{66,66,66}
-\definecolor{fill2}{RGB}{243,243,243}
+\definecolor{fill2}{RGB}{241,241,241}
 
 \colorlet{headingFill}{fill1}
 \colorlet{headingColour}{white}
@@ -21,7 +21,7 @@
 
 
 %%%%%%%%%%
-% HEADER %
+%     HEADER     %
 %%%%%%%%%%
 
 \LoadClass{article}
@@ -50,7 +50,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
-% SECTIONS WITH DATES %
+%         SECTIONS WITH DATES             %
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \titleformat{\subsubsection}
@@ -64,5 +64,6 @@
 }
 
 \newcommand{\datedsubsection}[2]{
-  \subsection*{\normalfont\textit{#1 \hfill #2}} % uses subsection to ensure that all dates are aligned
+  \subsection*{\normalfont\textit{#1 \hfill #2}} 
+  % uses subsection to ensure that all dates are aligned
 }
