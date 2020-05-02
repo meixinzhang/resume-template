@@ -1,0 +1,180 @@
+% Show an arc, and tell a stories, key word optimization (skills), tell about your personality as well
+\documentclass{mxresume}
+\usepackage{mxresumetemplate}
+\usepackage{hyperref}
+
+% Sets margin of the file
+\usepackage[top=0cm,bottom=0cm,left=0cm,right=0cm]{geometry} 
+
+% Changes spacing (before and after) for section headings
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\subsection}{0pt}{0pt}{2pt}
+
+% Changes the font of the document from default (Times New Roman) to sans-serif 
+\renewcommand{\familydefault}{\sfdefault}
+
+% Changes the size of the bullet 
+\usepackage{enumitem}
+\renewcommand\labelitemi{\small\textbullet}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             Heading                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{resumeheading}
+\name{Meixin (Maxine)}{Zhang}
+\expertise{Computer Science/Business Option at UWaterloo}
+\headingPad
+\end{resumeheading}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Side Bar for Expertise        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.26\textwidth}
+\begin{sidebar}
+%%%%%%%%%%%%% Contact Info %%%%%%%%%%%%%
+\phone{(289) 828-4916}\\[1mm]
+\email{\href{mailto:meixinzhang@outlook.com}{\textcolor{fill1}{meixinzhang\textsc{@}outlook.com}}} \\[1mm]
+\linkedin{\href{https://www.linkedin.com/in/meixin-zhang/}{\textcolor{fill1}{linkedin.com/in/meixin-zhang}}} \\[1mm]
+\github{\href{https://github.com/meixinzhang}{\textcolor{fill1}{github.com/meixinzhang}}}
+%%%%%%%%%%%%% Skills %%%%%%%%%%%%%
+\subsubsection*{Programming Languages}
+C / \Cpp\ \Bullet 
+Python \Bullet 
+\Csharp\ \Bullet 
+SQL \\[1mm]
+HTML \Bullet 
+CSS \Bullet 
+JavaScript \\[1mm]
+TypeScript \Bullet 
+R \Bullet 
+Scheme \Bullet 
+Bash
+%
+\subsubsection*{Technologies}
+Node.js \Bullet 
+jQuery \Bullet 
+Angular\\[1mm]
+Git \Bullet 
+\textsc{\LaTeX} \Bullet 
+Vim \Bullet 
+MatLab \\[1mm]
+Robot Operation System (ROS) 
+%%%%%%%%%%%%% Awards & Accomplishments %%%%%%%%%%%%%
+\subsubsection*{Accomplishments}
+Elle Hacks 2019, 1\textsuperscript{st} Place \\[1mm]
+Hubdoc Hack 2019, 1\textsuperscript{st} Place \\[1mm]
+2018 Dean's Honours List
+%%%%%%%%%%%%% Activities %%%%%%%%%%%%%
+\subsubsection*{Activities}
+Member of Waterloo Aquadrone \\
+Machine Vision Team\\[1mm]
+Technology Executive at UW \\
+Finance Association \\[1mm]
+Math Ambassador at UWaterloo \\[1mm]
+Latin Dance Club Representative
+%%%%%%%%%%%%% Courses %%%%%%%%%%%%%
+% \subsubsection*{Relevant Courses}
+% Object-Oriented Development \\[1mm]
+% Algorithm Design and \\
+% Data Abstraction \\[1mm]
+% Intro to Combinatorics (Advanced) \\[1mm]
+% Linear Algebra (Advanced)
+%%%%%%%%%%%%% Languages %%%%%%%%%%%%%
+% \subsubsection*{Languages}
+% Mandarin \\[1mm] 
+% French
+%%%%%%%%%%%%% Interests %%%%%%%%%%%%%
+\subsubsection*{Interests}
+Orchestral Violin Player \\[1mm]
+Latin Dance Performer \\[1mm]
+Drawing and Painting
+%%%%%%%%%%%%% Education %%%%%%%%%%%%%
+\subsubsection*{Education}
+\textbf{University of Waterloo} \\[1.2mm]
+Bachelor of Computer Science \\
+\textit{Co-operative Program} \\[1.2mm]
+\tab Business Specialization \\
+\tab Global Experience Certificate \\[2mm]
+April 2022 \GBar Waterloo, ON
+\end{sidebar}
+\end{minipage}
+%
+\hfill\textcolor{gray}{\vline width 1pt}\hfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            Resume Body             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.72\textwidth}
+\begin{resumebody}
+\begin{large}
+
+\section*{Relevant Experiences}
+\runsubsection{Google}%
+\multidescript{\GBar Software Engineering Intern}{\Cpp}
+\info{Waterloo, ON}{May -- August 2020}
+\begin{tightemize}{5mm}
+\item Contributing to the open-source tensor-flow extension repository
+\end{tightemize}
+%
+\runsubsection{Deloitte}%
+\multidescript{\GBar Data Science Intern}{Python, SQL}
+\info{Toronto, ON}{January -- April 2020}
+\begin{tightemize}{5mm}
+%WIP
+\item Supported time sensitive client projects
+\item Developed generalized exploratory data analysis (EDA) script and cross-validation module for internal cross-client codebase, reducing time spent on these tasks by 50\textsc{\%}
+%WIP
+\item Built a text based search and question answering engine on research papers with DistilBert and BM25+, achieving 95\textsc{\%} confidence with top 10 answers
+\end{tightemize}
+\sectionenumPad
+\emph{\underline{Selected Projects}}: \\[1.5mm]
+\info{Physician Prescription Behavior}{8 weeks}
+\begin{tightemize}{5mm}
+\item Proposed and built significant features in an interpretable linear model for identifying driving factors of new prescriptions, increasing the precision of the model by 8\textsc{\%}
+%WIP
+\item Ensured minimal bias and noise with residual analysis and visulization 
+\end{tightemize}
+\sectionenumPad
+\info{COVID-19 Occupancy Forecast}{3 weeks}
+\begin{tightemize}{5mm}
+\item Developed the full data science pipeline for forecasting COVID-19 requirements of hospitals using regression with interaction statistic model with an accuracy of 90\textsc{\%}
+\end{tightemize}
+%
+\runsubsection{Hubdoc}%
+\multidescript{\GBar Robot Platform Software Developer}{JavaScript, Node.js}
+\info{Toronto, ON}{January -- April 2019}
+\begin{tightemize}{5mm}
+\item Redesigned and refactored asynchronous scraping scripts and processing algorithms, led to improvement of robot efficiency and success rates by as much as 80\textsc{\%}
+\item Trained neural networks to localize login fields and developed a machine learning model to classify login states, which further automates document fetching process
+\end{tightemize}
+%
+%%%%%%%%%%%%% Projects %%%%%%%%%%%%%%
+%
+\section*{Projects}
+\runsubsection{IPlanner}%
+\multidescript{\GBar Interactive Agile Planner}{\Csharp}
+\begin{tightemize}{5mm}
+\item Researched and implemented Principal Component Analysis (PCA) algorithm using \Csharp\ to narrow down the most influential factors for the success/failure of a sprint
+\item Analyzed program outputs and presented new evaluation methods and critical success factors for Agile practices in 20\texttt{+} teams
+\end{tightemize}
+%
+\runsubsection{ParkIt}%
+\multidescript{\GBar Automated Parking System}{JavaScript, Node.js}
+\begin{tightemize}{5mm}
+\item Designed and built a web app that integrates machine vision and cloud platform for licence plate recognition, automating payments, and storing parking history
+\item Implemented RESTful API endpoints with Node.js that to facilitate real-time communication between hardware, the user portal, and the database
+\end{tightemize}
+%
+\runsubsection{WATonomous}%
+\multidescript{\GBar Autonomous Vehicle Path-Planning}{\Cpp, ROS}
+\begin{tightemize}{5mm}
+\item Developed software for an SAE Chevrolet Bolt competing in the GM/SAE Autodrive Challenge using weight-based cost map evaluation and D* route planning algorithms
+\item Implemented a parameter server compatible with ROS to update program constants at runtime, reducing 20\texttt{+} hours of recompiling time at testing during release cycles
+\end{tightemize}
+\end{large}
+\end{resumebody}
+\end{minipage}
+\hfill
+\end{document}
