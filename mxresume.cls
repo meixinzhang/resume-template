@@ -131,7 +131,7 @@
 % SPACING %
 %%%%%%%%%%%
 \newcommand{\tab}{\hspace*{2mm}}
-\newcommand{\headingPad}{\vspace*{3mm}} % used for incoming
+\newcommand{\headingPad}{\vspace*{2mm}} % used for incoming
 \newcommand{\enumPad}{\vspace*{-2.5mm}} % used to reduce the spacing before and after enum
 \newcommand{\sectionenumPad}{\vspace*{-2mm}} % used to reduce the spacing before and after enum
 

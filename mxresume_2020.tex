@@ -27,11 +27,12 @@
 \expertise{Computer Science at UWaterloo}
 \headingPad
 \end{resumeheading}
+\vspace{-1mm}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %      Side Bar for Expertise        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.26\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 \begin{sidebar}
 %%%%%%%%%%%%% Contact Info %%%%%%%%%%%%%
 \phone{(289) 828-4916}\\[1mm]
@@ -42,25 +43,25 @@
 \subsubsection*{Programming Languages}
 C / \Cpp\ \Bullet 
 Python \Bullet 
-\Csharp\ \Bullet 
 SQL \\[1mm]
 HTML \Bullet 
 CSS \Bullet 
 JavaScript \\[1mm]
-TypeScript \Bullet 
+\Csharp\ \Bullet 
 R \Bullet 
 Scheme \Bullet 
 Bash
 %
 \subsubsection*{Technologies}
-Node.js \Bullet 
-jQuery \Bullet 
-Angular\\[1mm]
-Git \Bullet 
-\textsc{\LaTeX} \Bullet 
+Git \Bullet
+\textsc{\LaTeX} \Bullet
 Vim \Bullet 
-MatLab \\[1mm]
-Robot Operation System (ROS) 
+Beam
+\\[1mm]
+Node.js \Bullet
+jQuery \Bullet
+Angular\\[1mm]
+Google Cloud Platform (GCP)
 %%%%%%%%%%%%% Awards & Accomplishments %%%%%%%%%%%%%
 \subsubsection*{Accomplishments}
 Elle Hacks 2019, 1\textsuperscript{st} Place \\[1mm]
@@ -68,17 +69,12 @@ Hubdoc Hack 2019, 1\textsuperscript{st} Place \\[1mm]
 2018 Dean's Honours List
 %%%%%%%%%%%%% Activities %%%%%%%%%%%%%
 \subsubsection*{Activities}
-Member of Waterloo Aquadrone \\
+Co-Lead of Waterloo Aquadrone \\
 Machine Vision Team\\[1mm]
 Technology Executive at UW \\
 Finance Association \\[1mm]
 Math Ambassador at UWaterloo \\[1mm]
-Latin Dance Club Representative
-%%%%%%%%%%%%% Courses %%%%%%%%%%%%%
-\subsubsection*{Relevant Courses}
-Object-Oriented Development \\[1mm]
-Intro to Combinatorics (Advanced) \\[1mm]
-Linear Algebra (Advanced)
+Cuban Salsa Club Representative
 %%%%%%%%%%%%% Languages %%%%%%%%%%%%%
 % \subsubsection*{Languages}
 % Mandarin \\[1mm] 
@@ -88,6 +84,13 @@ Linear Algebra (Advanced)
 Orchestral Violin Player \\[1mm]
 Latin Dance Performer \\[1mm]
 Drawing and Painting
+%%%%%%%%%%%%% Courses %%%%%%%%%%%%%
+\subsubsection*{Relevant Courses}
+Algorithms \\[1mm]
+Object-Oriented Development \\[1mm]
+% Designing Functional Programs
+% Intro to Combinatorics (Advanced) \\[1mm]
+Linear Algebra (Advanced)
 %%%%%%%%%%%%% Education %%%%%%%%%%%%%
 \subsubsection*{Education}
 \textbf{University of Waterloo} \\[1.2mm]
@@ -104,45 +107,35 @@ April 2022 \GBar Waterloo, ON
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %            Resume Body             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.72\textwidth}
+\begin{minipage}[t]{0.73\textwidth}
 \begin{resumebody}
 \begin{large}
-
+%
 \section*{Relevant Experiences}
 \runsubsection{Google}%
-\multidescript{\GBar Software Engineering Intern}{\Cpp}
-\info{Waterloo, ON}{May -- August 2020}
+\multidescript{\GBar Software Engineering Intern}{Python, GCP}
+\info{Mountain View, CA (Remote)}{May -- August 2020}
 \begin{tightemize}{5mm}
-\item Contributing to the open-source TensorFlow Extension repository
+\item Implemented additional features that handle multi-tensor models in TensorFlow Extended (TFX) inference component, expanding TFX and TFLite use-cases
+\item Redesigned the TFX inference component to run on Arrow RecordBatch, achieving pipeline input standardization and improving modular space-time efficiency by 20\textsc{\%}
+\item Developed a utility module to transform RecordBatch to JSON strings, which supports inference for models stored in remote locations
 \end{tightemize}
 %
 \runsubsection{Deloitte}%
 \multidescript{\GBar Data Science Intern}{Python, SQL}
 \info{Toronto, ON}{January -- April 2020}
 \begin{tightemize}{5mm}
-\item Processed data and created interpretable forecasting models for client projects
+\item Developed a full data science pipeline for forecasting COVID-19 hospital equipment demand using a regression model with interactions, achieving an accuracy of 92\textsc{\%}
+\item Proposed and built significant features in an interpretable regression model that identifies driving factors for prescriptions, leading to valuable insights for the client
 \item Developed generalized exploratory data analysis (EDA) scripts and a cross-validation module for the internal cross-client codebase, reducing task completion time by 50\textsc{\%}
-\item Built a text-based search and question answering engine using DistilBert pipeline and BM25\texttt{+}, with 95\textsc{\%} confidence that top 5 outputs provide the correct answer(s)
-\end{tightemize}
-\sectionenumPad
-\emph{\underline{Selected Projects}}: \\[1.5mm]
-\info{Physician Prescription Behavior}{8 weeks}
-\begin{tightemize}{5mm}
-\item Proposed and built significant features in an interpretable linear model that identifies driving factors for new prescriptions, increasing the performance of the model by 8\textsc{\%}
-\item Ensured accuracy and minimal noise with comparison models and residual analysis
-\end{tightemize}
-\sectionenumPad
-\info{COVID-19 Occupancy Forecast}{3 weeks}
-\begin{tightemize}{5mm}
-\item Developed a full data science pipeline for forecasting COVID-19 hospital equipment demand using a regression model with interactions, achieving an accuracy of 90\textsc{\%}
 \end{tightemize}
 %
 \runsubsection{Hubdoc}%
 \multidescript{\GBar Robot Platform Software Developer}{JavaScript, Node.js}
 \info{Toronto, ON}{January -- April 2019}
 \begin{tightemize}{5mm}
-\item Redesigned and refactored asynchronous scraping scripts and processing algorithms, led to improvement of robot efficiency and success rates by as much as 80\textsc{\%}
-\item Trained neural networks to localize login fields and developed a model to classify login states with 90\textsc{\%} accuracy, which further automates document fetching process
+\item Redesigned and refactored asynchronous scraping scripts and processing algorithms, leading to improvement of robot efficiency and success rates by as much as 80\textsc{\%}
+\item Trained neural networks to localize login fields and developed a model to classify login states with 90\textsc{\%} accuracy, further automating the document fetching process
 \end{tightemize}
 %
 %%%%%%%%%%%%% Projects %%%%%%%%%%%%%%
@@ -151,22 +144,28 @@ April 2022 \GBar Waterloo, ON
 \runsubsection{IPlanner}%
 \multidescript{\GBar Interactive Agile Planner}{\Csharp}
 \begin{tightemize}{5mm}
-\item Researched and implemented Principal Component Analysis (PCA) algorithm using \Csharp\ to narrow down the most influential factors for the success/failure of a sprint
+\item Researched and implemented a Principal Component Analysis (PCA) algorithm using \Csharp\ to narrow down the most influential factors for the success/failure of a sprint
 \item Analyzed program outputs and presented new evaluation methods and critical success factors for Agile practices in 20\texttt{+} teams
-\end{tightemize}
-%
-\runsubsection{ParkIt}%
-\multidescript{\GBar Automated Parking System}{JavaScript, Node.js}
-\begin{tightemize}{5mm}
-\item Designed and built a web app that integrates machine vision and cloud platform for licence plate recognition, automating payments, and storing parking history
-\item Implemented RESTful API endpoints with Node.js that to facilitate real-time communication between hardware, the user portal, and the database
 \end{tightemize}
 %
 \runsubsection{WATonomous}%
 \multidescript{\GBar Autonomous Vehicle Path-Planning}{\Cpp, ROS}
 \begin{tightemize}{5mm}
-\item Developed software for an SAE Chevrolet Bolt competing in the GM/SAE Autodrive Challenge using weight-based cost map evaluation and D* route planning algorithms
+\item Developed software for a Chevrolet Bolt competing in the GM/SAE Autodrive Challenge using weight-based cost map evaluation and D* route planning algorithms
 \item Implemented a parameter server compatible with ROS to update program constants at runtime, reducing 20\texttt{+} hours of recompiling time at testing during release cycles
+\end{tightemize}
+%
+\runsubsection{ParkIt}%
+\multidescript{\GBar Elle Hacks - Automated Parking System}{JavaScript, Node.js}
+\begin{tightemize}{5mm}
+\item Designed and built a web app that integrates machine vision and a cloud platform for licence plate recognition, automating payments, and storing parking history
+\item Implemented RESTful API endpoints with Node.js to facilitate real-time communication between hardware, the user portal, and the database
+\end{tightemize}
+%
+\runsubsection{CQA-19}%
+\multidescript{\GBar COVID-19 Question Answering Machine}{Python}
+\begin{tightemize}{5mm}
+\item Built a text-based search and question answering engine using DistilBert pipeline and BM25\texttt{+}, with 95\textsc{\%} confidence that the top 5 outputs provide the correct answer(s)
 \end{tightemize}
 \end{large}
 \end{resumebody}
