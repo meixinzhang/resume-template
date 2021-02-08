@@ -101,6 +101,16 @@
 }
 
 
+%%%%%%%%%%%%
+% EMPHASIS %
+%%%%%%%%%%%%
+\RequirePackage{tikz}
+
+\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
+\newcommand{\tag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=infoColour!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
 %%%%%%%%%%%%%%%%%%%%%%
 % PERSONAL INFO FILL %
 %%%%%%%%%%%%%%%%%%%%%%
@@ -127,11 +137,16 @@
     \raisebox{1.5mm}{#1}
 }
 
+
 %%%%%%%%%%%
 % SPACING %
 %%%%%%%%%%%
+\RequirePackage{dashrule}
+
+\newcommand{\vdivider}{\hfill\textcolor{gray}{\vline width 1pt}\hfill}
+\newcommand{\hdivider}{\textcolor{gray}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\smallskip}
 \newcommand{\tab}{\hspace*{2mm}}
-\newcommand{\headingPad}{\vspace*{2mm}} % used for incoming
+\newcommand{\bodyPad}{\vspace*{0.5mm}}
 \newcommand{\enumPad}{\vspace*{-2.5mm}} % used to reduce the spacing before and after enum
 \newcommand{\sectionenumPad}{\vspace*{-2mm}} % used to reduce the spacing before and after enum
 
